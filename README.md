@@ -101,4 +101,10 @@ Para interactuar con la API de Weather, necesitas obtener un token de acceso med
 ![Diagrama1](https://raw.githubusercontent.com/DiegoDev-2024/weather/main/WeatherController_getWeather.jpg)
 
 
-¡Gracias por utilizar la API de Weather Controller! Si tienes alguna pregunta o problema, no dudes en contactarnos.
+## Contacto
+¡Gracias por utilizar la API de Weather Controller!
+¡No dudes en contactarme! 😊
+
+- **Nombre:** Diego Acosta
+- **Correo Electrónico:** diego1503bsc@gmail.com
+- **LinkedIn:** [Diego en LinkedIn](https://www.linkedin.com/in/diego-acosta-374563b3/)
