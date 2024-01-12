@@ -96,8 +96,18 @@ Para interactuar con la API de Weather, necesitas obtener un token de acceso med
 
 ## Base de Datos H2
 
-Este repositorio utiliza una base de datos H2. A continuación, se detallan los pasos y capturas de pantalla para comprender cómo interactuar con la base de datos.
+Este repositorio utiliza una base de datos H2. 
+A continuación, se detallan los pasos y capturas de pantalla para comprender cómo interactuar 
+con la base de datos.
 
+   - **H2 Consola:** [Consola H2](http://localhost:8080/h2-console) 
+
+![BddCaptura](https://raw.githubusercontent.com/DiegoDev-2024/weather/main/bdd%20captura.png)
+
+1. Datos de Conexión
+   - **JDBC URL:** jdbc:h2:mem:testdb
+   - **User:** sa
+   - **User:** password
 
 ## Diagramas
 
