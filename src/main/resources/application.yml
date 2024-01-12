@@ -1,0 +1,24 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-j5vfj6e0b62cd0tm.us.auth0.com/
+          audiences: https://weatherApi
+
+feign:
+  url-weather: https://api.openweathermap.org/data/2.5
+  api-key: 1ae5c1476efe827c41536f8b51bf0bcb
+
+myapp:
+  minutesHold: 10
