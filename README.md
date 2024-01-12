@@ -94,6 +94,11 @@ Para interactuar con la API de Weather, necesitas obtener un token de acceso med
 
 **Nota:** Asegúrate de tener instalado cURL o utiliza tu herramienta preferida para realizar solicitudes HTTP **(Postman)**.
 
+## Base de Datos H2
+
+Este repositorio utiliza una base de datos H2. A continuación, se detallan los pasos y capturas de pantalla para comprender cómo interactuar con la base de datos.
+
+
 ## Diagramas
 
 1. Diagrama de secuencia obtener clima por longitud y latitud
