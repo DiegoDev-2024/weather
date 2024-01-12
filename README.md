@@ -55,6 +55,12 @@ La imagen Docker para esta aplicación está disponible en Docker Hub. Puedes de
 docker pull diegobsc/weather-app
 ```
 
+Para levantar la imagen docker con el siguiente comando
+```bash
+docker run -p 8080:8080 diegobsc/weather-app:latest
+```
+
+
 ## Obtener Token de Acceso
 
 Para interactuar con la API de Weather, necesitas obtener un token de acceso mediante el servidor de autorización de Auth0.
