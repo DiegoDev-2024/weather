@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "95b35864-694f-4eba-aa34-81609b23dafe",
+		"name": "Test-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5674174"
+	},
+	"item": [
+		{
+			"name": "ApiExterna",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Clima por latitud y longitud",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IktVNnlmd2VnOHZaQmtKOVdoVFM4NiJ9.eyJpc3MiOiJodHRwczovL2Rldi1qNXZmajZlMGI2MmNkMHRtLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJuTVc1eTRTWHptejRGUnR5MDU0ZEJyemVzTjhteEpNREBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly93ZWF0aGVyQXBpIiwiaWF0IjoxNzA1MDIzMjg1LCJleHAiOjE3MDUxMDk2ODUsImF6cCI6Im5NVzV5NFNYem16NEZSdHkwNTRkQnJ6ZXNOOG14Sk1EIiwic2NvcGUiOiJyZWFkd2VhdGhlcnMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.CxZty_1ZLOVc2EejYOfQfPZVLFrd7HE82s6Zg1spUM0YlWeaWuuQ7O_AH2GjbRNuYK6w4DaejLOFxcZvpBp2eiY1tZkKFWTUShIb1m3QLYxLdI3LpPnxh1_ZUyl0M6WX0iKSZy2i5jL6a9CSjK7eCdZReO2CagEPLUIzdgzvP0gTVKRSKnrpLc4jCa1ZQ6DtA3J4LamoBlp-kdZvgzlVL_i0jU0z4Mdxr9QzKKRGDbKvn7FsRGANVK5SPl_it7zFGRjt8OXziaAtXMIB2RhMRdP6YLzoe6xgxO4kXhxMmWuquH8Uj-jiNNk_cCLxRNAoZEOlT4iXNlk0E-QJyUqbow",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lon\": 122.99,\n    \"lat\": 50.56\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/weather",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener los datos guardados en bdd",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IktVNnlmd2VnOHZaQmtKOVdoVFM4NiJ9.eyJpc3MiOiJodHRwczovL2Rldi1qNXZmajZlMGI2MmNkMHRtLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJuTVc1eTRTWHptejRGUnR5MDU0ZEJyemVzTjhteEpNREBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly93ZWF0aGVyQXBpIiwiaWF0IjoxNzA1MDI1Mjc2LCJleHAiOjE3MDUxMTE2NzYsImF6cCI6Im5NVzV5NFNYem16NEZSdHkwNTRkQnJ6ZXNOOG14Sk1EIiwic2NvcGUiOiJyZWFkd2VhdGhlcnMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Mpjj0BnM6zZONc6vqKKeWezLXO2LmlEskvwjeL8-Mzdnh3qF7nPvdYFywQ5qq-WLrlCpEVicOrboJlcIJiPTwgo5AcrJLFwZkEVgG17sMY50zNFJM6_z_Sb-V56Qcsd-ipXuX3K674EDOAlsyaoIC-8JqFCU5uOH_gx6g56f4_f41WG8OpD8wZFWCtAVyeD6kWRITvicl-0EiC0Ifci-6aY0Dj9Q3FyF72C3W6x7xtGNDbrqnBkZXV4EBbKnm7nWK_S2xpyghoWKH1eqtZkYrltmZ6Oh3MSAqJKiPIBZpCYYWYngE9jMIBRDBQOWvJVtDEAyhhWCWe8sYlaAtTNOfQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/weather/history",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Testear disponibilidad de Ms",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IktVNnlmd2VnOHZaQmtKOVdoVFM4NiJ9.eyJpc3MiOiJodHRwczovL2Rldi1qNXZmajZlMGI2MmNkMHRtLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJuTVc1eTRTWHptejRGUnR5MDU0ZEJyemVzTjhteEpNREBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly93ZWF0aGVyQXBpIiwiaWF0IjoxNzA1MDA0NzQyLCJleHAiOjE3MDUwOTExNDIsImF6cCI6Im5NVzV5NFNYem16NEZSdHkwNTRkQnJ6ZXNOOG14Sk1EIiwic2NvcGUiOiJyZWFkd2VhdGhlcnMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.1sFTNZmvta54iO6OVAgmtWWVHkmdtGCQsC2G49DiS-PhjRFp5NAnN6SLXPoMiQJ1H0XOieOecMkk6spl8qhCE2pyStjDoHS6yOCduu874z68ctP6M5zM_yz_HxfTMbSnPZ0T3MWwKZscEfi_b6JRklO8tFuExk80hzCoiN3LufNmlQ-o86g4NPU-pHEvqs9SayX3yNg-KMbgzG2HPeAI-rp_WD94LV59Z1nYlQeUM_eJ7eOtV0hPRbctzSTZ9KVg1rcarYDeGodh8C6bCML1piyuWsnKvuFsjMGBaF97plHMGDWYDLjQhX2deVGTpjUwiWdhcVqNCGpRkaKxX_SsZQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/sys/status",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sys",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Token para peticiones",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client_id\": \"nMW5y4SXzmz4FRty054dBrzesN8mxJMD\",\n    \"client_secret\": \"8yp3E2LoS57Ti02HkJEYEpnnAOZlhyEVNUTCOl-rT7gYkjegHwL-3azDhl9i9kpg\",\n    \"audience\": \"https://weatherApi\",\n    \"grant_type\": \"client_credentials\"\n}"
+				},
+				"url": {
+					"raw": "https://dev-j5vfj6e0b62cd0tm.us.auth0.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"dev-j5vfj6e0b62cd0tm",
+						"us",
+						"auth0",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
