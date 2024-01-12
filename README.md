@@ -94,4 +94,11 @@ Para interactuar con la API de Weather, necesitas obtener un token de acceso med
 
 **Nota:** Asegúrate de tener instalado cURL o utiliza tu herramienta preferida para realizar solicitudes HTTP **(Postman)**.
 
+## Diagramas
+
+1. Diagrama de secuencia obtener clima por longitud y latitud
+
+![Diagrama1](https://raw.githubusercontent.com/DiegoDev-2024/weather/main/WeatherController_getWeather.jpg)
+
+
 ¡Gracias por utilizar la API de Weather Controller! Si tienes alguna pregunta o problema, no dudes en contactarnos.
